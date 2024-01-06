@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lllayout"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginHorizontal="10dp"
+    android:background="@color/my_color"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/weight"
+        android:ems="10"
+        android:hint="Enter Your Weight "
+        android:padding="12dp"
+        android:inputType="number">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/Heightft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight"
+        android:layout_marginTop="33dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Your Height  (FT)"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:padding="12dp">
+
+
+    </EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/Heightcm"
+        android:textColor="@color/black"
+        android:layout_below="@id/Heightft"
+        android:hint="Enter Your Height in (CM)"
+        android:background="@color/white"
+        android:layout_marginTop="33dp"
+        android:padding="12dp"
+        android:inputType="number"
+        >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:padding="12dp">
+
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_result"
+        android:hint="Result"
+        android:gravity="center"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:padding="25dp"
+        >
+
+    </TextView>
+
+
+</LinearLayout>
